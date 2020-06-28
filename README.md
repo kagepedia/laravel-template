@@ -18,6 +18,8 @@ $ docker-compose up -d
 // laravel set up
 $ cd app/laravel-template
 $ touch .env
+$ docker exec -it <CONTAINER ID> bash
+$ cd laravel-template
 $ composer install
 ```
 
