@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
+use App\Models\T_task;
+
 class T_TaskController extends Controller
 {
     /**
@@ -14,7 +17,17 @@ class T_TaskController extends Controller
     public function index()
     {
         //
-        // var_dump(99999999); exit;
+        $result = DB::select("SELECT * FROM t_task");
+        $table = DB::select("SHOW COLUMNS FROM t_task");
+        $task = DB::table('t_task')->get();
+        $arr = array();
+        for ($i=0; $i < count($result); $i++) {
+            foreach($result[$i] as $row) {
+                echo $row . '<br>';
+            }
+        }
+        echo '<pre>';
+        var_dump($result, $table); exit;
         return view('task.index');
     }
 
