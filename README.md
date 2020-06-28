@@ -21,6 +21,10 @@ $ touch .env
 $ docker exec -it <CONTAINER ID> bash
 $ cd laravel-template
 $ composer install
+
+// routing 
+$ a2enmod rewrite
+$ /etc/init.d/apache2 restart
 ```
 
 ## Access
