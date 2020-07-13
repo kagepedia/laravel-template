@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use DB;
-use App\Models\T_task;
+use App\Models\Admin\T_task;
 
 class T_TaskController extends Controller
 {
