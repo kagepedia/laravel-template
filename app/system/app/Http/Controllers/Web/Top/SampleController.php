@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Web\Top;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Web\Controller;
 use Illuminate\Http\Request;
 
 class SampleController extends Controller
