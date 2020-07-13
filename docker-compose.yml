@@ -8,6 +8,7 @@ services:
     privileged: true
     volumes:
       - ./app:/var/www/html
+      - ./app/logs:/var/log/apache2
 
   db:
     image: mysql:5.7
